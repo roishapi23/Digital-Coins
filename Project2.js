@@ -31,7 +31,7 @@ function showCoinsUI(coinsArray) {
         let singleCoinArea = $("<div>");
         singleCoinArea.attr("id",coin.id);
         singleCoinArea.css("border-radius","6px");
-        singleCoinArea.css("background-image","url('image.jpg')");
+        singleCoinArea.css("background-image","url('/pics/image.jpg')");
         singleCoinArea.css("-moz-box-shadow" , "inset 0 0 100px #000000");
         singleCoinArea.css("-webkit-box-shadow" , "inset 0 0 100px #000000");
         singleCoinArea.css("box-shadow"," 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.19)")
@@ -279,7 +279,7 @@ function showCoinsUI(coinsArray) {
         // Create a copy of the chosen coins array
         let temporaryChosenCoinsArray = JSON.parse(sessionStorage.getItem("Chosen coins")); 
         temporaryChosenCoinsArray.push(coinId); /* Adding the 6th coin to the array, just to show him as well at the modal */
-        $(".modal-content").css("background-image","url('image.jpg')"); 
+        $(".modal-content").css("background-image","url('/pics/image.jpg')"); 
         $(temporaryChosenCoinsArray).each(function (index , coin) { /* Create spcial div to each chosen coin */
             let choosenCoinDiv = $("<div>");
             choosenCoinDiv.css("border", "1px solid black");
@@ -407,7 +407,7 @@ function displayButtons(coinsArray) { /* Display most of the buttons */
         let enjoyText = $("<h2>");
         enjoyText.html("Enjoy !");
         let myPic = $("<img>");
-        myPic.attr("src" , "myPicture.JPG");
+        myPic.attr("src" , "/pics/myPicture.JPG");
         myPic.css("width" , "100%");
         myPic.attr("id","myPic")
         myPic.css("max-width" , "500px");
@@ -417,7 +417,7 @@ function displayButtons(coinsArray) { /* Display most of the buttons */
         myPic.css("box-shadow"," 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19)")
         myPic.css("border-radius" , "15px");
         let secondPic = $("<img>");
-        secondPic.attr("src" , "me.png");
+        secondPic.attr("src" , "/pics/me.png");
         secondPic.css("width" , "100px");
         secondPic.css("height" , "100px");
         myDescriptionArea.css("border-radius" , "15px");
@@ -426,7 +426,7 @@ function displayButtons(coinsArray) { /* Display most of the buttons */
         myDescriptionArea.css("padding","4%");
         myDescriptionArea.css("padding","4%");
         myDescriptionArea.css("border","2.5px solid white")
-        myDescriptionArea.css("background-image","url('image2.jpg')");
+        myDescriptionArea.css("background-image","url('/pics/image2.jpg')");
         myDescriptionArea.css("background-size", "cover")
         myDescriptionArea.css("margin","2%")
         myDescriptionArea.css("display","inline-block");
@@ -436,7 +436,7 @@ function displayButtons(coinsArray) { /* Display most of the buttons */
         $(myDescriptionArea).append(secondPic)
         myAboutArea.append(myDescriptionArea , myPic);
         myAboutArea.css("padding","3%");
-        myAboutArea.css("background-image","url('image.jpg')");
+        myAboutArea.css("background-image","url('/pics/image.jpg')");
         myAboutArea.css("border-radius" , "15px");
         myAboutArea.css("-moz-box-shadow" , "inset 0 0 100px #000000");
         myAboutArea.css("-webkit-box-shadow" , "inset 0 0 100px #000000");
@@ -483,7 +483,7 @@ function displaySorryImg() {/* On no result for search - this function is displa
     alertPicture.css("width" , "100%");
     alertPicture.css("max-width" , "400px");
     alertPicture.css("max-height" , "auto");
-    alertPicture.attr("src","sorry.png");
+    alertPicture.attr("src","/pics/sorry.png");
     massageArea.append(massage)
     $("#dynamicCoinsArea").append(massageArea , alertPicture);
 }
@@ -507,7 +507,7 @@ function createReportsArea() {
         alertPicture.css("width" , "100%");
         alertPicture.css("max-width", "330px");
         alertPicture.css("max-heigth","auto");
-        alertPicture.attr("src","alert pic.png");
+        alertPicture.attr("src","/pics/alert pic.png");
         massageArea.append(massage)
         $("#dynamicCoinsArea").append(massageArea,alertPicture);
         return;
