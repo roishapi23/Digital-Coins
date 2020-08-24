@@ -1,0 +1,221 @@
+body,html{
+    height: 100%;
+    margin: 0%;
+    padding: 0;
+    background-image: url(bitcoin-3089728_1920.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+#header{
+    height: 8%;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+#buttonsArea{
+    height: 13%;
+    max-height: auto;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+#dynamicCoinsArea{
+    /* height: 70%; */
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+
+
+#buttonsArea{
+    width: 100%;
+}
+
+#search{
+    /* margin-left: 30%; */
+    margin-top: 3px;
+    width: 160px;
+    height: 37px;
+    border-radius: 5px;
+    /* border: 1.4px solid rgb(55, 55, 173); */
+    border-color: rgb(0, 64, 255);
+    outline: none;
+    transition: 0.25s;
+}
+
+#search:focus{
+  width: 177px;
+  border-color: rgb(0, 183, 255);
+}
+
+
+
+h1 {
+  color: #e3dede;
+  max-block-size: 90% ;
+	
+  margin-top: 0;
+  text-align: center;
+	font-family: 'Myriad Pro', 'Myriad', helvetica, arial, sans-serif;
+	text-shadow: 2px 3px 3px #292929;
+	letter-spacing: 0px;
+  -webkit-text-stroke: 1px white;	
+  /* position: relative; */
+}
+
+#footerImg{
+    display: inline-block;
+    height: 90%;
+    margin-top: 3px ;
+}
+
+.page-header{
+  display: inline-block;
+}
+
+#headerImg{
+  /* position: relative; */
+  display: inline-block;
+  max-height: 90%;
+  margin-top: -10px;
+  
+}
+
+
+/* slider desing */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 21px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 2px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+    
+
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
+
+.loader-div {
+  border: 1px solid #272323;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+  display: none;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+ 

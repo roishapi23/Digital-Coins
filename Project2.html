@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Project2.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="icon" href="BitIcon.png">
+    <title>Digital Coins</title>
+</head>
+<body class="container page-top" onload="sessionStorage.clear()"> <!-- Rest session storage on every refresh -->
+
+    <div class="loader-wrapper"> 
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    
+    <div id="header" >
+        <span><h1 class="page-header">Welcome</h1></span>
+        <img id="headerImg" src="pngfuel.com (6).png">
+    </div>
+    <div id="buttonsArea" >
+        <button id="showCoins" class="btn btn-primary">Coins</button>
+        <button id="showReports" class="btn btn-primary">Reports</button>
+        <button id="about" class="btn btn-primary">About</button><br>
+        <input id="search" type="text" placeholder="Search">    
+        <button id="searchButton" type="submit" class="btn btn-success btn-sm">Search</button>
+    </div><br>
+    <div id="dynamicCoinsArea" class="card-group"></div>
+    <script src="Project2.js"></script>
+</body>
+</html>
